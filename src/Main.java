@@ -10,14 +10,11 @@ import ComputerComponents.RAM.RAMType;
 import ComputerComponents.StorageOfInformation.StorageOfInformation;
 import ComputerComponents.StorageOfInformation.StorageOfInformationType;
 
-import java.util.List;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Computer computer = new Computer("Citilink", "Rich");
         computer.setDisplay(new Display(10.7, DisplayType.IPS, 309.1));
-        computer.setRAM(new RAM(RAMType.DDR4, 32, 100));
+        computer.setRAM(new RAM(RAMType.DDR4, 32, 100.1));
         computer.setStorageOfInformation(new StorageOfInformation(StorageOfInformationType.HDD, 2048, 400.4));
         computer.setKeyboard(new Keyboard(KeyboardType.MECHANICAL, true, 300));
         computer.setProcessor(new Processor(3.4, 8,  ProcessorEfficiency.INTEL, 79.5));

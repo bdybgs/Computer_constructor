@@ -1,9 +1,13 @@
 package ComputerComponents.Keyboard;
 
+import lombok.AllArgsConstructor;
+import lombok.ToString;
+
+@ToString
 public class Keyboard {
-    private final KeyboardType type;
-    private final boolean availabilityRGB;
-    private final double weight;
+    private KeyboardType type;
+    private boolean availabilityRGB;
+    private double weight;
 
     public Keyboard(KeyboardType type, boolean availabilityRGB, double weight) {
         this.type = type;
@@ -14,12 +18,5 @@ public class Keyboard {
         return weight;
     }
 
-    @Override
-    public String toString() {
-        return "Keyboard{" +
-                "type=" + type +
-                ", availabilityRGB=" + availabilityRGB +
-                ", weight=" + weight +
-                '}';
-    }
+
 }

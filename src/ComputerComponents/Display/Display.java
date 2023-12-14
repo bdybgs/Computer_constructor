@@ -1,9 +1,13 @@
 package ComputerComponents.Display;
 
+import lombok.AllArgsConstructor;
+import lombok.ToString;
+
+@ToString
 public class Display {
-    private final double diagonal;
-    private final DisplayType type;
-    private final double weight;
+    private double diagonal;
+    private DisplayType type;
+    private double weight;
 
     public Display(double diagonal, DisplayType type, double weight) {
         this.diagonal = diagonal;
@@ -14,13 +18,5 @@ public class Display {
         return weight;
     }
 
-    @Override
-    public String toString() {
-        return "Display{" +
-                "diagonal=" + diagonal +
-                ", type=" + type +
-                ", weight=" + weight +
-                '}';
-    }
 }
 

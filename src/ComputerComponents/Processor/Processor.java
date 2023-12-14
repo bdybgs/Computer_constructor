@@ -1,10 +1,16 @@
 package ComputerComponents.Processor;
 
+
+import lombok.AllArgsConstructor;
+import lombok.ToString;
+
+@ToString
+//@AllArgsConstructor
 public class Processor {
-    private final double frequency;
-    private final int numberOfCores;
-    private final ProcessorEfficiency efficiency;
-    private final double weight;
+    private  double frequency;
+    private  int numberOfCores;
+    private  ProcessorEfficiency efficiency;
+    private  double weight;
 
     public Processor(double frequency, int numberOfCores, ProcessorEfficiency efficiency, double weight) {
         this.frequency = frequency;
@@ -16,13 +22,5 @@ public class Processor {
         return weight;
     }
 
-    @Override
-    public String toString() {
-        return "Processor{" +
-                "frequency=" + frequency +
-                ", numberOfCores=" + numberOfCores +
-                ", efficiency=" + efficiency +
-                ", weight=" + weight +
-                '}';
-    }
+
 }

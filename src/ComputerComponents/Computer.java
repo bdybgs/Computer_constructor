@@ -5,6 +5,9 @@ import ComputerComponents.Keyboard.Keyboard;
 import ComputerComponents.Processor.Processor;
 import ComputerComponents.RAM.RAM;
 import ComputerComponents.StorageOfInformation.StorageOfInformation;
+import lombok.AllArgsConstructor;
+
+
 
 public class Computer {
     public final String vendor;
