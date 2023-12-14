@@ -6,9 +6,12 @@ import ComputerComponents.Processor.Processor;
 import ComputerComponents.RAM.RAM;
 import ComputerComponents.StorageOfInformation.StorageOfInformation;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 
-
+@Getter
+@Setter
 public class Computer {
     public final String vendor;
     public final String name;
@@ -47,45 +50,13 @@ public class Computer {
                 '}';
     }
 
-    public RAM getRam() {
-        return ram;
-    }
 
-    public Display getDisplay() {
-        return display;
-    }
-
-    public Keyboard getKeyboard() {
-        return keyboard;
-    }
-
-    public Processor getProcessor() {
-        return processor;
-    }
-
-    public StorageOfInformation getStorageOfInformation() {
-        return storageOfInformation;
-    }
 
     public void setRAM(RAM ram) {
         this.ram = ram;
     }
 
-    public void setProcessor(Processor processor) {
-        this.processor = processor;
-    }
 
-    public void setStorageOfInformation(StorageOfInformation storageOfInformation) {
-        this.storageOfInformation = storageOfInformation;
-    }
-
-    public void setDisplay(Display display) {
-        this.display = display;
-    }
-
-    public void setKeyboard(Keyboard keyboard) {
-        this.keyboard = keyboard;
-    }
 
 
 }
